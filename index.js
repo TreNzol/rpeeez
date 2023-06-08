@@ -1,6 +1,4 @@
-require('dotenv').config();
-
-const Discord = require('discord.js-selfbot-v13');
+const Discord = require('discord.js');
 const client = new Discord.Client({
   presence: {
     status: 'dnd'
@@ -46,5 +44,3 @@ client.on('message', (message) => {
 
 keepAlive();
 client.login(process.env.TOKEN);
-
-// FUCK YOU REMAKER | Create By RagFep \\
